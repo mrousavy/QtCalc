@@ -4,8 +4,10 @@ import QtQuick.Layouts 1.3
 
 ApplicationWindow {
     visible: true
-    width: 640
-    height: 480
+    width: 400
+    minimumWidth: 200
+    height: 500
+    minimumHeight: 300
     title: qsTr("QtCalc")
 
     SwipeView {
@@ -15,14 +17,14 @@ ApplicationWindow {
 
         Page {
             Label {
-                text: qsTr("Basic calculator")
+                text: qsTr("Basic calculator goes here")
                 anchors.centerIn: parent
             }
         }
 
         Page {
             Label {
-                text: qsTr("Advanced functions")
+                text: qsTr("Advanced functions goes here")
                 anchors.centerIn: parent
             }
         }
