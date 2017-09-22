@@ -6,19 +6,23 @@ ApplicationWindow {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Hello World")
+    title: qsTr("QtCalc")
 
     SwipeView {
         id: swipeView
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
-        Page1 {
+        Page {
+            Label {
+                text: qsTr("Basic calculator")
+                anchors.centerIn: parent
+            }
         }
 
         Page {
             Label {
-                text: qsTr("Second page")
+                text: qsTr("Advanced functions")
                 anchors.centerIn: parent
             }
         }
@@ -28,10 +32,10 @@ ApplicationWindow {
         id: tabBar
         currentIndex: swipeView.currentIndex
         TabButton {
-            text: qsTr("First")
+            text: qsTr("Basic")
         }
         TabButton {
-            text: qsTr("Second")
+            text: qsTr("Advanced")
         }
     }
 }
