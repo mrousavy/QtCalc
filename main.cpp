@@ -1,5 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include "osxhelper.h"
+
+#if defined(Q_OS_MACOS)
+#define UnionTitlebar false // Combine the titlebar in macOS
+#endif
+
 
 int main(int argc, char *argv[])
 {
@@ -10,6 +16,10 @@ int main(int argc, char *argv[])
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
+
+#if defined(Q_OS_MACOS) && UnionTitlebar
+    osxHelper::removeTitlebarFromWindow();
+#endif
 
     return app.exec();
 }

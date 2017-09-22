@@ -12,8 +12,7 @@ ApplicationWindow {
     title: qsTr("QtCalc")
 
     Material.theme: Material.Light
-    Material.accent: Material.Blue
-
+    Material.accent: Material.Red
 
     // Calculator's Value Text Field
     Rectangle {
@@ -30,6 +29,7 @@ ApplicationWindow {
         readOnly: true
         height: parent.height
         anchors.right: parent.right
+        focus: true
     }
 
     // Basic and Advanced Page
