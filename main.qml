@@ -16,9 +16,13 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page {
-            Label {
-                text: qsTr("Basic calculator goes here")
-                anchors.centerIn: parent
+            TextEdit {
+                text: qsTr("0.00001")
+                font.pointSize: 30
+                font.family: "Helvetica"
+                font.weight: Font.Thin
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.centerIn: parent.horizontalCenter
             }
         }
 

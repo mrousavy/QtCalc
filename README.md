@@ -1,2 +1,2 @@
 # QtCalc
-A macOS calculator clone written in Qt/C++
+A competent Material Design Calculator for Windows/macOS/Linux written in Qt/C++
