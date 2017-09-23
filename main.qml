@@ -4,11 +4,12 @@ import QtQuick.Layouts 1.3
 
 ApplicationWindow {
     visible: true
-    width: 400
-    minimumWidth: 200
-    height: 500
-    minimumHeight: 300
+    width: 200
+    minimumWidth: 150
+    height: 300
+    minimumHeight: 250
     title: qsTr("QtCalc")
+    id: window
 
     // Calculator's Value Text Field
     Rectangle {
@@ -18,10 +19,10 @@ ApplicationWindow {
     }
     TextArea {
         text: qsTr("0.00001")
-        font.pointSize: 30
+        font.pointSize: window.height / 10
         font.family: "Helvetica"
         font.weight: Font.Thin
-        color: Material.foreground
+        color: "black"
         readOnly: true
         height: parent.height
         anchors.right: parent.right
@@ -30,7 +31,7 @@ ApplicationWindow {
 
     // Basic and Advanced Page
     SwipeView {
-        anchors.topMargin: 50
+        anchors.topMargin: window.height / 7
         id: swipeView
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
