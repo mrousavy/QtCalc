@@ -75,3 +75,18 @@ T Exponent(T base, T exp)
 {
     return base ^ exp;
 }
+
+double calcPi(int n)
+{
+    double pi = 4.0 , decimal = 1.0;
+    while(n > 2)
+    {
+        decimal -= (1.0 / (2.0 * n + 1 ));
+        --n;
+        decimal += (1.0 / (2.0 * n + 1 ));
+        --n;
+    }
+    if(n > 0)
+        decimal -= (1.0 / (2.0 * n + 1));
+    return(pi * decimal);
+}
