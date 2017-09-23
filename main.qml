@@ -48,11 +48,17 @@ ApplicationWindow {
     // Footer tab bar
     footer: TabBar {
         id: tabBar
+        height: window.height / 10
         currentIndex: swipeView.currentIndex
+
         TabButton {
+            height: parent.height
+            font.pixelSize: height / 2
             text: qsTr("Basic")
         }
         TabButton {
+            height: parent.height
+            font.pixelSize: height / 2
             text: qsTr("Advanced")
         }
     }
