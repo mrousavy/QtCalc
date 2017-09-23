@@ -4,5 +4,7 @@
         <file>qtquickcontrols2.conf</file>
         <file>BasicPage.qml</file>
         <file>AdvancedPage.qml</file>
+        <file>CalcButton.qml</file>
+        <file>CalcStyle.js</file>
     </qresource>
 </RCC>
