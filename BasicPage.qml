@@ -13,136 +13,94 @@ Rectangle {
         anchors.fill: rect
         columns: 4
 
-
         ///////////////
         //   ROW 1   //
         ///////////////
-        Button {
+        CalcButton {
             id: opClear
             text: "C"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
-        Button {
+        CalcButton {
             id: opNegate
             text: "±"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
-        Button {
+        CalcButton {
             id: opDivide
             text: "÷"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
-        Button {
+        CalcButton {
             id: opMultiply
             text: "×"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
 
 
         ///////////////
         //   ROW 2   //
         ///////////////
-        Button {
+        CalcButton {
             id: num7
             text: "7"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num8
             text: "8"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num9
             text: "9"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: opSub
             text: "−"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
 
 
         ///////////////
         //   ROW 3   //
         ///////////////
-        Button {
+        CalcButton {
             id: num4
             text: "4"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num5
             text: "5"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num6
             text: "6"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: opAdd
             text: "+"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
         }
 
 
         ///////////////
         //   ROW 4   //
         ///////////////
-        Button {
+        CalcButton {
             id: num1
             text: "1"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num2
             text: "2"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: num3
             text: "3"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Button {
+        CalcButton {
             id: opEquals
             text: "="
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+            primary: false
             Layout.rowSpan: 2
         }
 
@@ -150,20 +108,14 @@ Rectangle {
         ///////////////
         //   ROW 5   //
         ///////////////
-        Button {
+        CalcButton {
             id: num0
             text: "0"
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
             Layout.columnSpan: 2
         }
-        Button {
+        CalcButton {
             id: opComma
             text: "."
-            font.pointSize: 20
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
     }
 }

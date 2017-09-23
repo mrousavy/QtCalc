@@ -13,7 +13,7 @@ ApplicationWindow {
 
     // Calculator's Value Text Field
     Rectangle {
-        color: "lightgrey"
+        color: "darkgrey"
         height: parent.height
         width: parent.width
     }
@@ -22,7 +22,7 @@ ApplicationWindow {
         font.pointSize: window.height / 10
         font.family: "Helvetica"
         font.weight: Font.Thin
-        color: "black"
+        color: "white"
         readOnly: true
         height: parent.height
         anchors.right: parent.right
