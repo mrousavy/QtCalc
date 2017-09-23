@@ -7,6 +7,7 @@ import "CalcStyle.js" as Theme;
 
 // Custom Button with styles
 Rectangle {
+    id: rect
     Layout.fillHeight: true
     Layout.fillWidth: true
     color: Theme.bgColor;
@@ -25,7 +26,7 @@ Rectangle {
                     renderType: Text.NativeRendering
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
-                    font.pointSize: 20
+                    font.pixelSize: rect.height / 2
                     color: "#555"
                     text: control.text
                 }

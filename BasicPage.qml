@@ -12,6 +12,8 @@ Rectangle {
         id: grid
         anchors.fill: rect
         columns: 4
+        columnSpacing: 1
+        rowSpacing: 1
 
         ///////////////
         //   ROW 1   //
