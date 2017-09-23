@@ -27,13 +27,13 @@ Rectangle {
             primary: false
         }
         CalcButton {
-            id: opDivide
-            text: "÷"
+            id: opModulo
+            text: "%"
             primary: false
         }
         CalcButton {
-            id: opMultiply
-            text: "×"
+            id: opDivide
+            text: "÷"
             primary: false
         }
 
@@ -54,8 +54,8 @@ Rectangle {
             text: "9"
         }
         CalcButton {
-            id: opSub
-            text: "−"
+            id: opMultiply
+            text: "×"
             primary: false
         }
 
@@ -76,8 +76,8 @@ Rectangle {
             text: "6"
         }
         CalcButton {
-            id: opAdd
-            text: "+"
+            id: opSub
+            text: "−"
             primary: false
         }
 
@@ -98,10 +98,9 @@ Rectangle {
             text: "3"
         }
         CalcButton {
-            id: opEquals
-            text: "="
+            id: opAdd
+            text: "+"
             primary: false
-            Layout.rowSpan: 2
         }
 
 
@@ -116,6 +115,11 @@ Rectangle {
         CalcButton {
             id: opComma
             text: "."
+        }
+        CalcButton {
+            id: opEquals
+            text: "="
+            primary: false
         }
     }
 }
