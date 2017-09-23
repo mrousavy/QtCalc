@@ -1,7 +1,6 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
-import QtQuick.Controls.Material 2.2
 
 ApplicationWindow {
     visible: true
@@ -10,9 +9,6 @@ ApplicationWindow {
     height: 500
     minimumHeight: 300
     title: qsTr("QtCalc")
-
-    Material.theme: Material.Light
-    Material.accent: Material.Red
 
     // Calculator's Value Text Field
     Rectangle {

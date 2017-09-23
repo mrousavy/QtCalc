@@ -33,6 +33,10 @@ HEADERS += \
     calculatormodel.h \
     osxhelper.h
 
+# app icon
+RC_ICONS = calc.ico
+ICON = calc.icns
+
 # For ObjC (osxHelper)
 macx:LIBS += -framework Foundation -framework Cocoa
 macx:INCLUDEPATH += /System/Library/Frameworks/Foundation.framework/Versions/C/Headers \

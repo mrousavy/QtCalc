@@ -2,7 +2,7 @@
 #include <QQmlApplicationEngine>
 #include "osxhelper.h"
 
-#if defined(Q_OS_MACOS)
+#ifdef Q_OS_MACOS
 #define UnionTitlebar false // Combine the titlebar in macOS
 #endif
 
