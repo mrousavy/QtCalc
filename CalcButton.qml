@@ -17,5 +17,18 @@ Rectangle {
         anchors.fill: parent
         text: parent.text
 
+        style: ButtonStyle {
+                background: Rectangle {
+                    color: primary ? (control.pressed ? "#bbb" : "#ddd") : (control.pressed ? "#efa91c" : "#f9b734")
+                }
+                label: Text {
+                    renderType: Text.NativeRendering
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pointSize: 20
+                    color: "#555"
+                    text: control.text
+                }
+            }
     }
 }
